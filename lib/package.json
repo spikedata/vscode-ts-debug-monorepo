@@ -1,0 +1,17 @@
+{
+  "name": "@example/lib",
+  "version": "1.0.0",
+  "description": "demo dependency - @example/userB depends on @example/libA",
+  "author": "ilan@spikedata.co.za",
+  "license": "MIT",
+  "repository": "https://github.com/spikedata/vscode-ts-debug-monorepo",
+  "main": "build/main/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"{src,test,tools}/**/*.{js,cjs,mjs,ts}\" --write",
+    "fix:lint": "tsc --noEmit -p tsconfig.all.json && eslint \"{src,test,tools}/**/*.{js,cjs,mjs,ts}\" --quiet --fix",
+    "diff:fix": "run-s fix:lint && prettier \"{src,test,tools}/**/*.{js,cjs,mjs,ts}\" --list-different",
+    "clean": "rm -rf build"
+  }
+}
