@@ -20,3 +20,11 @@ node -r ts-node/register user/src/cli.ts
 - possibilities:
   - real monorepo has deeper subdirs (e.g. `{workspace}/stack/lambda-email/package.json`)
   - real monorepo uses _'s in workpaces array (e.g `{workspace}/package.json: { "workspaces": [ "stack/_" ]`)
+
+## Notes
+
+- had trouble getting the `@example` namespace to be recognised by yarn
+  - had some lock files lying about `rm yarn.lock package-lock.json`
+  - and removing and re-installing `rm -rf node_modules && yarn install`
+  - seemed to do the trick `ll node_modules/@example` exists
+  - see https://youtu.be/G8KXFWftCg0 on setting up workspace
