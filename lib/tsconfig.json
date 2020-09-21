@@ -2,7 +2,6 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
-    "mapRoot": "/",
     "outDir": "build/main",
     "typeRoots": ["node_modules/@types", "src/types"]
   },
