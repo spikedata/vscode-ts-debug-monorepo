@@ -7,7 +7,7 @@
       "name": "Launch Program",
       "program": "${workspaceFolder}/user/build/main/cli.js",
       "skipFiles": ["<node_internals>/**"],
-      "preLaunchTaskpreLaunchTask": "Watch all"
+      "preLaunchTask": "Watch all"
     }
   ]
 }
