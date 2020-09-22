@@ -7,7 +7,8 @@
   "repository": "https://github.com/spikedata/vscode-ts-debug-monorepo",
   "main": "build/main/src/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "run-s clean build:tsc",
+    "build:tsc": "tsc -p tsconfig.json",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"{src,test,tools}/**/*.{js,cjs,mjs,ts}\" --write",
     "fix:lint": "tsc --noEmit -p tsconfig.all.json && eslint \"{src,test,tools}/**/*.{js,cjs,mjs,ts}\" --quiet --fix",

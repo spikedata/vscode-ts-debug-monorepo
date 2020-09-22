@@ -8,6 +8,12 @@
       "program": "${workspaceFolder}/user/build/main/cli.js",
       "skipFiles": ["<node_internals>/**"],
       "preLaunchTask": "Watch all"
+    },
+    {
+      "type": "pwa-node",
+      "request": "attach",
+      "name": "Attach to process",
+      "port": 9229
     }
   ]
 }
