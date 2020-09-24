@@ -1,9 +1,9 @@
 {
   "debug.javascript.usePreview": true,
   "debug.javascript.autoAttachFilter": "always",
-  "debug.javascript.terminalOptions": {
-    "trace": true
-  },
+  // "debug.javascript.terminalOptions": {
+  //   "trace": true
+  // },
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "editor.formatOnSave": true,
   // "editor.rulers": [100],
